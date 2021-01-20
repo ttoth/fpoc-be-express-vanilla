@@ -1,0 +1,34 @@
+{
+  "name": "fpoc-be-express-vanilla",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "devstart": "nodemon app.js",
+    "serverstart": "DEBUG=be-express-vanilla:* npm run devstart",
+    "test": "mocha --recursive",
+    "lint": "eslint './**' "
+  },
+  "dependencies": {
+    "bullmq": "^1.14.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "ioredis": "^4.19.4",
+    "lodash": "^4.17.20",
+    "mongoose": "^5.11.12",
+    "morgan": "~1.9.1",
+    "pug": "^3.0.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^7.18.0",
+    "eslint-config-google": "^0.14.0",
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.7",
+    "sinon": "^9.2.3"
+  }
+}
